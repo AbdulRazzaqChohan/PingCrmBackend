@@ -76,27 +76,24 @@ WSGI_APPLICATION = 'pingcrm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pingCrm',
-        'USER': 'postgres',
-        'PASSWORD': 'CS#iub60',
-        'HOST': '[2406:da18:243:740e:d223:2d19:6ce6:6488]',
-        'PORT': '5432',
-        'OPTIONS': {
-            'connect_timeout': 10,
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'pingCrm',
+#         'USER': 'postgres',
+#         'PASSWORD': 'CS#iub60',
+#         'HOST': '[2406:da18:243:740e:d223:2d19:6ce6:6488]',
+#         'PORT': '5432',
+#     }
+# }
 
 
 
